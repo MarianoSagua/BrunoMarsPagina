@@ -1,95 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno Mars - Tour</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Bruno Mars - Musica</title>
     <link rel="shortcut icon" href="../images/icono-brunoMarss.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <a class="logoPrincipal" href="../index.html">
-                <img src="/images/brunomarslogomaschico.png" alt="logo Bruno Mars">
-            </a>
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="container-fluid">
+        <header class="row header">
+            <div class="logo col-lg-3">
+                <a href="../index.html">
+                    <img src="/images/brunomarslogomaschico.png" alt="logo Bruno Mars">
+                </a>
+            </div>
 
-            <ul class="nav-menu">
-                <li class="nav-menu--musica">
-                    <a href="musica.html">Musica</a>
+            <div class="navegacion col-lg-6">
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-menu--musica">
+                            <a class="nav-menu__item" href="musica.html">Musica</a>
 
-                    <ul class="nav-subMenu">
-                        <li>
-                            <a href="../pages/musica.html#singles">Singles</a>
+                            <ul class="nav-subMenu">
+                                <li>
+                                    <a class="nav-menu__item" href="musica.html#singles">Singles</a>
+                                </li>
+        
+                                <li>
+                                    <a class="nav-menu__item" href="musica.html#albums">Albums</a>
+                                </li>
+                            </ul>
                         </li>
 
                         <li>
-                            <a href="../pages/musica.html#albums">Albums</a>
+                            <a class="nav-menu__item" href="tour.html">Tour</a>
+                        </li>
+                        
+                        <li>
+                            <a class="nav-menu__item" href="biografia.html">Biografia</a>
+                        </li>
+                        
+                        <li class="nav-menu--musica">
+                            <a class="nav-menu__item" href="galeria.html">Galeria</a>
+
+                            <ul class="nav-subMenu">
+                                <li>
+                                    <a class="nav-menu__item" href="galeria.html#fotos">Fotos</a>
+                                </li>
+        
+                                <li>
+                                    <a class="nav-menu__item" href="galeria.html#videos">Videos</a>
+                                </li>
+                            </ul> 
+                        </li>
+
+                        <li>
+                            <a class="nav-menu__item" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
-                </li>
-
-                <li>
-                    <a href="tour.html">Tour</a>
-                </li>
-
-                <li>
-                    <a href="biografia.html">Biografia</a>
-                </li>
-
-                <li class="nav-menu--musica">
-                    <a href="galeria.html">Galeria</a>
-
-                    <ul class="nav-subMenu">
-                        <li>
-                            <a href="../pages/galeria.html#fotos">Fotos</a>
-                        </li>
-
-                        <li>
-                            <a href="../pages/galeria.html#videos">Videos</a>
-                        </li>
-                    </ul> 
-                </li>
-                
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        
-    </header>
-
+                </nav>
+            </div>
+        </header>
+    </div>
+    
     <main>
         <div>
             <img src="../images/brunoMarsConcierto.jpg" alt="logo album" title="Imagen de fondo concierto">
         </div>
-        <div class="mainGeneralTour">
-            <section class="proximosShows">
-                <h2 class="proximosShows__titulo">Proximos Shows</h2>
+    
+        <section class="proximosShows">
+            <div class="shows__titulo">
+                <h2 class="shows__titulo--item">Bruno Mars World Tour 2022</h2>
+            </div>
             
-                <div class="shows">
-                    <p class="shows__fecha">Mar <span>17</span></p>
-                    <p class="shows__ciudad">New York, USA</p>
-                    <a class="shows__link" href="#">Tickets</a>
-            
-                    <p class="shows__fecha">Mar <span>17</span></p>
-                    <p class="shows__ciudad">New York, USA</p>
-                    <a class="shows__link" href="#">Tickets</a>
-            
-                    <p class="shows__fecha">Mar <span>17</span></p>
-                    <p class="shows__ciudad">New York, USA</p>
-                    <a class="shows__link" href="#">Tickets</a>
-            
-                    <p class="shows__fecha">Mar <span>17</span></p>
-                    <p class="shows__ciudad">New York, USA</p>
-                    <a class="shows__link" href="#">Tickets</a>
+            <div class="shows">
+                <div class="shows__fechas">
+                    <h3 class="shows__fechas--item">Mar<span>17</span></h3>
+                    <h3 class="shows__fechas--item">Mar<span>25</span></h3>
+                    <h3 class="shows__fechas--item">Apr<span>02</span></h3>
+                    <h3 class="shows__fechas--item">Apr<span>08</span></h3>
+                    <h3 class="shows__fechas--item">Apr<span>12</span></h3>
+                    <h3 class="shows__fechas--item">Apr<span>21</span></h3>
+                    <h3 class="shows__fechas--item">May<span>05</span></h3>
+                    <h3 class="shows__fechas--item">May<span>10</span></h3>
                 </div>
-            </section> 
-        </div>
+                <div class="shows__ciudad">
+                    <h3 class="shows__ciudad--item">Nueva York, EEUU</h3>
+                    <h3 class="shows__ciudad--item">Miami, EEUU</h3>
+                    <h3 class="shows__ciudad--item">Londres, UK</h3>
+                    <h3 class="shows__ciudad--item">Paris, Francia</h3>
+                    <h3 class="shows__ciudad--item">Madrid, España</h3>
+                    <h3 class="shows__ciudad--item">Barcelona, España</h3>
+                    <h3 class="shows__ciudad--item">Estocolmo, Suecia</h3>
+                    <h3 class="shows__ciudad--item">Pekin, China</h3>
+                </div>
+                <div class="shows__tickets">
+                    <h3 class="shows__tickets--item">
+                        <a href="#">Tickets</a>
+                    </h3>
+                    <h3 class="shows__tickets--item">
+                        <a href="#">Tickets</a>
+                    </h3>
+                    <h3 class="shows__tickets--item">
+                        <a href="#">Tickets</a>
+                    </h3>
+                    <h3 class="shows__tickets--item">
+                        <a href="#">Tickets</a>
+                    </h3>
+                    <h3 class="shows__tickets--item">
+                        <a href="#">Tickets</a>
+                    </h3>
+                    <h3 class="shows__tickets--item">
+                        <a href="#">Tickets</a>
+                    </h3>
+                    <h3 class="shows__tickets--item">
+                        <a href="#">Tickets</a>
+                    </h3>
+                    <h3 class="shows__tickets--item">
+                        <a href="#">Tickets</a>
+                    </h3>
+                    
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -150,8 +193,13 @@
             <h2>Pagina sin fines de lucro ni comerciales</h2>
         </div>
     </footer>
-</body>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
 
 
 
