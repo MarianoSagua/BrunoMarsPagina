@@ -1,0 +1,75 @@
+.albumesGeneral {
+	display: flex;
+	justify-content: center;
+}
+.singlesGeneral {
+	display: flex;
+	justify-content: center;
+}
+.musica__tituloGeneral {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: italic;
+}
+.contenedor {
+	padding: 100px 0;
+	background-image: $fondo-degradado;
+}
+.musica__albums {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 70px;
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+@mixin formatter($ancho, $alto) {
+	width: $ancho;
+	height: $alto;
+}
+
+.albumEspecifico {
+	text-align: left;
+	img {
+		@include formatter(320px, 320px);
+	}
+}
+.albumEspecifico__titulo {
+	padding: 20px 0;
+	font-size: 22px;
+}
+.albumEspecifico__boton {
+	@extend .boton-verTodos;
+
+	&:hover {
+		transition: 1s;
+		background-color: white;
+		color: black;
+	}
+}
+
+$tipo-musica: ("album": black, "single": white);
+
+@each $name, $color in $tipo-musica {
+	.btn-#{$name}{
+		background-color: $color;
+	}
+}
+
+@each $name, $color in $tipo-musica {
+	.texto-#{$name}{
+		color: $color;
+	}
+}
+.musica__singles {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 70px;
+	margin-top: 30px;
+	margin-bottom: 180px;
+	row-gap: 50px;
+}

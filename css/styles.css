@@ -6,61 +6,43 @@ li{
     list-style: none;
 }
 
-/* HEADER */
+/* HEADER*/
 
-.header{
+.navegacionCentrar{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
     background-color: #525151;
+}
+
+.navbar-brand{
     display: flex;
     justify-content: center;
-    line-height: 80px;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.nav-menu__item{
-    padding: 0;
-    margin: 0 30px;
-    color: white;
-    text-decoration: none;
-    padding-bottom: 10px;
-    font-size: 20px;
-}
-
-.nav-menu__item:hover{
-    color: white;
-    border-bottom: solid 1px white;
-}
-
-.navegacion ul{
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-.nav-menu--musica{
-    text-align: center;
-    display: block;
-}
-
-.nav-subMenu{
-    display: none;
+.dropdown-menu{
     background-color: #525151;
-    position: absolute;
     box-shadow: 5px 5px 15px 5px rgba(112,112,112,0.48);
-    border-radius: 10px;
 }
 
-.nav-menu li:hover .nav-subMenu{
-    display: block;
+.dropdown-item{
+    color: white;
+}
+
+.dropdown-item:hover{
+    color: black;
+}
+
+.nav-item{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon{
+    color: white;
 }
 
 /* MAIN */
@@ -350,10 +332,6 @@ li{
 
 /* TOUR */
 
-.mainGeneralTour{
-    background: linear-gradient(to top, #f5dff7, white);
-}
-
 .imagenPrincipalTour{
     padding: 0;
 }
@@ -486,12 +464,6 @@ li{
     padding: 50px 0px;
 }
 
-@media (max-width: 1100px) {
-    .formularioGeneral{
-        margin: 200px 20px;
-    }
-}
-
 .formulario_keloke{
     display: flex;
     justify-content: center;
@@ -560,7 +532,28 @@ li{
     }
 }
 
+@media (max-width: 1100px) {
+    .formularioGeneral{
+        margin: 200px 20px;
+    }
+}
+
 @media (max-width: 992px) {
+    .navegacionCentrar{
+        margin-top: 20px;
+        justify-content: left;
+    }
+
+    .navbar-brand{
+        justify-content: left;
+        margin-right: 0;
+    }
+
+    .navPrincipal{
+       padding-left: 5px;
+       padding-right: 5px;
+    }
+    
     .footer__titulo{
         text-align: center;
     }
@@ -649,22 +642,6 @@ li{
 }
 
 @media (max-width: 540px) {
-    .header{
-        line-height: 50px;
-    }
-
-    .nav-menu{
-        flex-direction: column;
-    }
-
-    .nav-menu li{
-        text-align: center;
-    }
-
-    .nav-menu__item{
-        padding: 0;
-    }
-
     .ultimaMusica__imagen{
         height: 334px;
         width: 334px;
@@ -684,6 +661,10 @@ li{
         margin-top: 5px;
         margin-bottom: 15px;
         width: 300px;
+    }
+
+    .proximosShows{
+        margin: 50px 0;
     }
 
     .proximosShows__tour{

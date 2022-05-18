@@ -12,139 +12,138 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/pruebacss.css">
   </head>
   <body>
       
     <div class="container-fluid">
-        <header class="row header">
-            <div class="logo col-lg-3">
-                <a href="/index.html">
-                    <img src="/images/brunomarslogoheader.png" alt="logo Bruno Mars">
-                </a>
-            </div>
+        <nav class="row navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid col-lg-12 navPrincipal">
+                <div class="col-lg-6">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/images/brunomarslogoheader.png" class="img-fluid" alt="..."> 
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="navegacion col-lg-6">
-                <nav>
-                    <ul class="nav-menu">
-                        <li class="nav-menu--musica">
-                            <a class="nav-menu__item" href="/pages/musica.html">Musica</a>
+                <div class="collapse navbar-collapse navegacionCentrar col-lg-6 col-sm-6" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color:white;" href="/pages/musica.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Musica</a>
 
-                            <ul class="nav-subMenu">
-                                <li>
-                                    <a class="nav-menu__item" href="/pages/musica.html#singles">Singles</a>
-                                </li>
-        
-                                <li>
-                                    <a class="nav-menu__item" href="/pages/musica.html#albums">Albums</a>
-                                </li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/pages/musica.html#singles">Singles</a></li>
+                                <li><a class="dropdown-item" href="/pages/musica.html#albums">Albums</a></li>
                             </ul>
                         </li>
 
-                        <li>
-                            <a class="nav-menu__item" href="/pages/tour.html">Tour</a>
-                        </li>
-                        
-                        <li>
-                            <a class="nav-menu__item" href="/pages/biografia.html">Biografia</a>
-                        </li>
-                        
-                        <li class="nav-menu--musica">
-                            <a class="nav-menu__item" href="/pages/galeria.html">Galeria</a>
-
-                            <ul class="nav-subMenu">
-                                <li>
-                                    <a class="nav-menu__item" href="/pages/galeria.html#fotos">Fotos</a>
-                                </li>
-        
-                                <li>
-                                    <a class="nav-menu__item" href="/pages/galeria.html#videos">Videos</a>
-                                </li>
-                            </ul> 
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:white;" href="/pages/tour.html">Tour</a>
                         </li>
 
-                        <li>
-                            <a class="nav-menu__item" href="/pages/contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/pages/biografia.html">Biografia</a>
                         </li>
-                    </ul>
-                </nav>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: white;" href="/pages/galeria.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galeria</a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/pages/galeria.html#fotos">Fotos</a></li>
+                                <li><a class="dropdown-item" href="/pages/galeria.html#videos">Videos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul> 
+                </div>
             </div>
-        </header>
-
-        <main class="row">
-            <div class="imagenPrincipalIndex">
-                <a href="/pages/musica.html">
-                    <img src="/images/logoPrincipalBrunoMars.png" class="img-fluid" alt="...">
-                </a>
-                
+        </nav>
+        
+        <main>
+            <div class="row">
+                <div class="imagenPrincipalIndex">
+                    <a href="/pages/musica.html">
+                        <img src="/images/logoPrincipalBrunoMars.png" class="img-fluid" alt="...">
+                    </a>
+                    
+                </div>
             </div>
             
-            <section class="ultimaMusica col-lg-6">
-                <div class="ultimoAlbumCancion">
-                    <div class="imagenUltimoAlbum">
-                        <img src="/images/Album An Evening With Silk Sonic.jpg" class="img-fluid" alt="...">
-                    </div>
-
-                    <div class="ultimaMusica__titulos">
-                        <h3 class="ultimaMusica__titulos--fecha">NOV 12 - 2021</h3>
-                        <h2 class="ultimaMusica__titulos--nombre">An Evening With Silk Sonic</h2>
-                    </div>
-                    
-                    <div class="ultimaMusica__links">
-                        <a class="ultimaMusica__links--Reproducir" href="#">Reproducir Album/Single</a>
-                        <a class="ultimaMusica__links--VerTodos"  href="pages/musica.html">Ver Todos</a>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="proximosShows col-lg-6">
-                <div class="proximosShowsGeneral">
-                    <div class="shows__titulo">
-                        <h2 class="shows__titulo--item">Proximos Shows</h2>
-                    </div>
-                    
-                    <div class="shows">
-                        <div class="shows__item">
-                            <h3 class="shows__fechas--item">Mar<span>17</span></h3>
-                            <h3 class="shows__ciudad--item col-lg-4">Nueva York, EEUU</h3>
-                            <h3 class="shows__tickets--item">
-                                <a href="#">Tickets</a>
-                            </h3>
+            <section class="main__partePrincipal row">
+                <section class="ultimaMusica col-lg-6 col-sm-12">
+                    <div class="ultimoAlbumCancion">
+                        <div class="imagenUltimoAlbum">
+                            <img src="/images/Album An Evening With Silk Sonic.jpg" class="img-fluid" alt="...">
                         </div>
     
-                        <div class="shows__item">
-                            <h3 class="shows__fechas--item">Mar<span>25</span></h3>
-                            <h3 class="shows__ciudad--item">Miami, EEUU</h3>
-                            <h3 class="shows__tickets--item">
-                                <a href="#">Tickets</a>
-                            </h3>
-                        </div>
-    
-                        <div class="shows__item">
-                            <h3 class="shows__fechas--item">Apr<span>02</span></h3>
-                            <h3 class="shows__ciudad--item">Londres, UK</h3>
-                            <h3 class="shows__tickets--item">
-                                <a href="#">Tickets</a>
-                            </h3>
+                        <div class="ultimaMusica__titulos">
+                            <h3 class="ultimaMusica__titulos--fecha">NOV 12 - 2021</h3>
+                            <h2 class="ultimaMusica__titulos--nombre">An Evening With Silk Sonic</h2>
                         </div>
                         
-                        <div class="shows__item">
-                            <h3 class="shows__fechas--item">Apr<span>08</span></h3>
-                            <h3 class="shows__ciudad--item">Paris, Francia</h3>
-                            <h3 class="shows__tickets--item">
-                                <a href="#">Tickets</a>
-                            </h3>
+                        <div class="ultimaMusica__links">
+                            <a class="ultimaMusica__links--Reproducir" href="#">Reproducir Album/Single</a>
+                            <a class="ultimaMusica__links--VerTodos"  href="pages/musica.html">Ver Todos</a>
                         </div>
                     </div>
-
-                    <div class="verTodos--Shows">
-                        <a class="proximosShows__links--VerTodos"  href="/pages/tour.html">Ver Todos</a>
+                </section>
+        
+                <section class="proximosShows col-lg-6 col-sm-12">
+                    <div class="proximosShowsGeneral">
+                        <div class="shows__titulo">
+                            <h2 class="shows__titulo--item">Proximos Shows</h2>
+                        </div>
+                        
+                        <div class="shows">
+                            <div class="shows__item">
+                                <h3 class="shows__fechas--item">Mar<span>17</span></h3>
+                                <h3 class="shows__ciudad--item">Nueva York, EEUU</h3>
+                                <h3 class="shows__tickets--item">
+                                    <a href="#">Tickets</a>
+                                </h3>
+                            </div>
+        
+                            <div class="shows__item">
+                                <h3 class="shows__fechas--item">Mar<span>25</span></h3>
+                                <h3 class="shows__ciudad--item">Miami, EEUU</h3>
+                                <h3 class="shows__tickets--item">
+                                    <a href="#">Tickets</a>
+                                </h3>
+                            </div>
+        
+                            <div class="shows__item">
+                                <h3 class="shows__fechas--item">Apr<span>02</span></h3>
+                                <h3 class="shows__ciudad--item">Londres, UK</h3>
+                                <h3 class="shows__tickets--item">
+                                    <a href="#">Tickets</a>
+                                </h3>
+                            </div>
+                            
+                            <div class="shows__item">
+                                <h3 class="shows__fechas--item">Apr<span>08</span></h3>
+                                <h3 class="shows__ciudad--item">Paris, Francia</h3>
+                                <h3 class="shows__tickets--item">
+                                    <a href="#">Tickets</a>
+                                </h3>
+                            </div>
+                        </div>
+    
+                        <div class="verTodos--Shows">
+                            <a class="proximosShows__links--VerTodos"  href="/pages/tour.html">Ver Todos</a>
+                        </div>
+                        
                     </div>
-                    
-                </div>
+                </section>
             </section>
+            
         </main>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem ducimus beatae deserunt eaque nam earum porro nesciunt atque reprehenderit optio eum similique odit ipsum ea, eligendi, nemo consectetur modi sequi.</p>
+        
         <footer class="row footer">
             <div class="footer__iconos col-lg-2">
                 <div class="footer__iconos--item">

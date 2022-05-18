@@ -1,0 +1,203 @@
+@import "utilities/variables.scss";
+
+body{
+ 	font-family: $fuente-principal;
+}
+
+li {
+	list-style: none;
+}
+
+@import "layout/header";
+
+.imagenPrincipalIndex {
+	padding: 0;
+}
+
+.main__partePrincipal{
+	padding-right: 0;
+	background-image: $fondo-degradado;
+}
+
+.ultimaMusica {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	height: 1000px;
+	position: relative;
+}
+
+.ultimoAlbumCancion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.imagenUltimoAlbum {
+	display: flex;
+	justify-content: center;
+}
+
+.ultimaMusica__titulos {
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.ultimaMusica__titulos--fecha {
+	color: #1f1f1e;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.ultimaMusica__titulos--nombre {
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+.boton-verTodos{
+	border: solid 1px black;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.ultimaMusica__links--VerTodos {
+	display: inline-block;
+	border: solid 1px black;
+	color: #1f1f1e;
+	padding: 5px 10px;
+	margin-top: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	&:hover {
+		transition: 1s;
+		background-color: black;
+		color: white;
+	}
+}
+
+.ultimaMusica__links--Reproducir {
+	display: block;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+	&:hover {
+		color: black;
+	}
+}
+
+.proximosShows {
+	height: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 50px;
+	position: relative;
+}
+
+.proximosShowsGeneral {
+ 	display: block;
+	text-align: center;
+	width: 700px;
+}
+
+.shows__titulo {
+	margin: 80px 0;
+}
+
+.shows__titulo--item {
+	display: inline-block;
+	padding: 0px 17px;
+	background-color: $naranja-oscuro;
+	font-size: 30px;
+	font-style: italic;
+	letter-spacing: 10px;
+	color: white;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.shows__item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.shows__fechas--item {
+	padding-top: 10px;
+	padding-bottom: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	background-color: $naranja-oscuro;
+	text-align: center;
+	font-style: italic;
+	color: white;
+	display: inline-block;
+	margin-bottom: 0;
+	width: 90px;
+	span {
+		display: block;
+		font-size: 30px;
+		line-height: 20px;
+	}
+}
+
+.shows__ciudad--item {
+	letter-spacing: 1px;
+	font-style: italic;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.shows__tickets--item {
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	a {
+		text-decoration: none;
+		font-style: italic;
+		color: $naranja-oscuro;
+	}
+}
+
+.proximosShows__links--VerTodos {
+	display: inline-block;
+	border: solid 1px black;
+	color: #1f1f1e;
+	padding: 5px 10px;
+	margin-top: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	&:hover {
+		transition: 1s;
+		background-color: black;
+		color: white;
+	}
+}
+
+
+@import "layout/footer";
+
+@import "pages_scss/musica";
+@import "pages_scss/tour";
+@import "pages_scss/biografia";
+@import "pages_scss/galeria";
+@import "pages_scss/contacto";
+
+@import "layout/mediaQueries";

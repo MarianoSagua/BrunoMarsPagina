@@ -13,63 +13,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pruebacss.css">
   </head>
   <body>
     <div class="container-fluid">
-        <header class="row header">
-            <div class="logo col-lg-3">
-                <a href="../index.html">
-                    <img src="/images/brunomarslogoheader.png" alt="logo Bruno Mars">
-                </a>
-            </div>
+        <nav class="row navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid col-lg-12 navPrincipal">
+                <div class="col-lg-6">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/images/brunomarslogoheader.png" class="img-fluid" alt="..."> 
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="navegacion col-lg-6">
-                <nav>
-                    <ul class="nav-menu">
-                        <li class="nav-menu--musica">
-                            <a class="nav-menu__item" href="musica.html">Musica</a>
+                <div class="collapse navbar-collapse navegacionCentrar col-lg-6 col-sm-6" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color:white;" href="/pages/musica.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Musica</a>
 
-                            <ul class="nav-subMenu">
-                                <li>
-                                    <a class="nav-menu__item" href="musica.html#singles">Singles</a>
-                                </li>
-        
-                                <li>
-                                    <a class="nav-menu__item" href="musica.html#albums">Albums</a>
-                                </li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/pages/musica.html#singles">Singles</a></li>
+                                <li><a class="dropdown-item" href="/pages/musica.html#albums">Albums</a></li>
                             </ul>
                         </li>
 
-                        <li>
-                            <a class="nav-menu__item" href="tour.html">Tour</a>
-                        </li>
-                        
-                        <li>
-                            <a class="nav-menu__item" href="biografia.html">Biografia</a>
-                        </li>
-                        
-                        <li class="nav-menu--musica">
-                            <a class="nav-menu__item" href="galeria.html">Galeria</a>
-
-                            <ul class="nav-subMenu">
-                                <li>
-                                    <a class="nav-menu__item" href="galeria.html#fotos">Fotos</a>
-                                </li>
-        
-                                <li>
-                                    <a class="nav-menu__item" href="galeria.html#videos">Videos</a>
-                                </li>
-                            </ul> 
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:white;" href="/pages/tour.html">Tour</a>
                         </li>
 
-                        <li>
-                            <a class="nav-menu__item" href="contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/pages/biografia.html">Biografia</a>
                         </li>
-                    </ul>
-                </nav>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: white;" href="/pages/galeria.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galeria</a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/pages/galeria.html#fotos">Fotos</a></li>
+                                <li><a class="dropdown-item" href="/pages/galeria.html#videos">Videos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul> 
+                </div>
             </div>
-        </header>
+        </nav>
 
         <main class="row contenedor">
             <div class="mainGeneralMusica">
@@ -81,25 +75,25 @@
                             <div class="albumEspecifico">
                                 <img src="/images/Album Doo-Wops & Hooligans.png" class="img-fluid" alt="Album Doo-Wops & Hooligans Portada">
                                 <h3 class="albumEspecifico__titulo">Doo-Wops & Hooligans</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Album 1-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Album Unorthodox Jukebox.jpg" class="img-fluid" alt="Album Unorthodox Jukebox Portada">
                                 <h3 class="albumEspecifico__titulo">Unorthodox Jukebox</h3>
-                                <a  class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a  class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Album 2-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Album 24kMagic.jpg" class="img-fluid" alt="Album 24K Magic Portada">
                                 <h3 class="albumEspecifico__titulo">24k Magic</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Album 3-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Album An Evening With Silk Sonic.jpg" class="img-fluid" alt="Album An Evening With Silk Sonic Portada">
                                 <h3 class="albumEspecifico__titulo">An Evening with Silk Sonic</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Album 4-->
                         </div>
                     </div>
@@ -113,49 +107,49 @@
                             <div class="albumEspecifico">
                                 <img src="/images/Single Just The Way You Are.jpg" class="img-fluid" alt="Single Just The Way You Are Portada">
                                 <h3 class="albumEspecifico__titulo">Just The Way You Are</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Single 1-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Single Grenade.png" class="img-fluid" alt="Single Grenade Portada">
                                 <h3 class="albumEspecifico__titulo">Grenade</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Single 2-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Single The Lazy Song.png" class="img-fluid" alt="Single The Lazy Song Portada">
                                 <h3 class="albumEspecifico__titulo">The Lazy Song</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Single 3-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Single Locked Out Of Heaven.jpg" class="img-fluid" alt="...">
                                 <h3 class="albumEspecifico__titulo">Locked Out of Heaven</h3>
-                                <a  class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a  class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Single 4-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Single Treasure.png" class="img-fluid" alt="...">
                                 <h3 class="albumEspecifico__titulo">Treasure</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Single 5-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Album 24kMagic.jpg" class="img-fluid" alt="...">
                                 <h3 class="albumEspecifico__titulo">24k Magic</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Single 6-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Album 24kMagic.jpg" class="img-fluid" alt="...">
                                 <h3 class="albumEspecifico__titulo">That's What I Like</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Single 7-->
                 
                             <div class="albumEspecifico">
                                 <img src="/images/Album An Evening With Silk Sonic.jpg" class="img-fluid" alt="...">
                                 <h3 class="albumEspecifico__titulo">Leave the Door Open</h3>
-                                <a class="albumEspecifico__boton" href="#">Reproducir</a>
+                                <a class="btn-album texto-single albumEspecifico__boton" href="#">Reproducir</a>
                             </div><!--Single 8-->
                         </div>
                     </div>

@@ -1,0 +1,23 @@
+.imagenPrincipalTour {
+	padding: 0;
+}
+.proximosShows__tour {
+	height: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: $fondo-degradado;
+}
+
+.shows__tickets--item--tour{
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	a {
+		text-decoration: none;
+		font-style: italic;
+		color: $negro;
+	}
+}
