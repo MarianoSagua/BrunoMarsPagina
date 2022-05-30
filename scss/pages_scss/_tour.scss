@@ -1,23 +1,34 @@
+.main__tour{
+	background-color: white;
+}
+
 .imagenPrincipalTour {
 	padding: 0;
 }
+
 .proximosShows__tour {
-	height: 1000px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	background-image: $fondo-degradado;
+ 	background-image: $fondo-degradado;
+ 	align-items: center;
+	padding: 100px;
+}
+
+.proximosShowsGeneral--tour{
+	display: block;
+	text-align: center;
+	width: 1200px;
 }
 
 .shows__tickets--item--tour{
-	margin-bottom: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 18px;
-	a {
-		text-decoration: none;
-		font-style: italic;
-		color: $negro;
-	}
+ 	margin-bottom: 0;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	font-size: 18px;
+ 	a {
+ 		text-decoration: none;
+ 		font-style: italic;
+ 		color: $naranja-oscuro;
+ 	}
 }

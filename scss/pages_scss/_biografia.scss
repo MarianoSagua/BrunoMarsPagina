@@ -1,6 +1,5 @@
 .main__biografia {
 	background-image: $fondo-degradado;
-	padding: 100px 0;
 }
 .biografia {
 	margin-top: 50px;
@@ -23,10 +22,12 @@
 .biografia-texto {
 	display: flex;
 	justify-content: center;
+	margin: 0 100px;
 }
 .biografia__parrafo {
 	text-align: justify;
 	font-size: 20px;
-	margin: 0 20px;
 	color: black;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-bottom: 0;
 }

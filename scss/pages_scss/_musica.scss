@@ -26,13 +26,8 @@
 	margin-bottom: 100px;
 }
 
-@mixin formatter($ancho, $alto) {
-	width: $ancho;
-	height: $alto;
-}
-
 .albumEspecifico {
-	text-align: left;
+	text-align: center;
 	img {
 		@include formatter(320px, 320px);
 	}
@@ -41,29 +36,7 @@
 	padding: 20px 0;
 	font-size: 22px;
 }
-.albumEspecifico__boton {
-	@extend .boton-verTodos;
 
-	&:hover {
-		transition: 1s;
-		background-color: white;
-		color: black;
-	}
-}
-
-$tipo-musica: ("album": black, "single": white);
-
-@each $name, $color in $tipo-musica {
-	.btn-#{$name}{
-		background-color: $color;
-	}
-}
-
-@each $name, $color in $tipo-musica {
-	.texto-#{$name}{
-		color: $color;
-	}
-}
 .musica__singles {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -72,4 +45,82 @@ $tipo-musica: ("album": black, "single": white);
 	margin-top: 30px;
 	margin-bottom: 180px;
 	row-gap: 50px;
+}
+
+.albumAnimado {
+	position: relative;
+	@include formatter(320px, 320px);
+	perspective: 1000px;
+	&:hover {
+		.front {
+			transform: rotateY(-180deg);
+		}
+		.back {
+			transform: rotateY(0deg);
+		}
+	}
+}
+.card {
+	position: absolute;
+	@include formatter(100%, 100%);
+	display: grid;
+	place-items: center;
+	border-radius: 0;
+	border: none;
+	color: white;
+	backface-visibility: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	transition: 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.front {
+	transform: rotateY(0deg);
+}
+
+.back--Uno{
+	@include albumBackStyles(#f9b91d, rotateY(180deg));
+	h3{
+		@include albumBackStyles__titulos(0, 17px, bold, $fuente-principal, #fceec5, italic);
+	}
+}
+
+.back--Dos{
+	@include albumBackStyles(#dccfbd, rotateY(180deg));
+	h3 {
+		@include albumBackStyles__titulos(0, 22px, bold, $fuente-principal, black, italic);
+	}
+}
+
+.back--Tres{
+	@include albumBackStyles(rgb(240, 240, 240), rotateY(180deg));
+	h3 {
+		@include albumBackStyles__titulos(0, 22px, bold, $fuente-principal, black, italic);
+	}
+}
+
+.back--cuatro{
+	@include albumBackStyles(#e39d61, rotateY(180deg));
+	h3 {
+		@include albumBackStyles__titulos(0, 22px, bold, $fuente-principal, #723629, italic);
+	}
+}
+
+.boton__principal--reproducir{
+	@extend .boton__principal;
+	background-color: black;
+	a{
+		color: white;
+	}
+
+	&:hover{
+		a{
+			color: black;
+		}
+	}
+
+	&::before {
+		background-color: white;
+	}
 }
